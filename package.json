@@ -1,0 +1,15 @@
+{
+  "name": "bake_it_like_baka",
+  "version": "1.0.0",
+  "description": "Project Bake it like Baka",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "sass --watch ./src/main.scss ./dist/main.css"
+  },
+  "author": "Tin Pritišanac",
+  "license": "ISC"
+}
