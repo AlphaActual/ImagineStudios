@@ -11118,5 +11118,142 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.font-Righteous {
+  font-family: "Righteous", cursive;
+}
+
+.text-oceanic-blue {
+  color: #0a58ca;
+}
+
+.bg-dark-red {
+  background-color: #2c0b0e;
+}
+
+#loading-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 3s, height 0s linear 3s;
+  background-color: #2c0b0e;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+#loading-container .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading-container.hideLoadingScreen {
+  opacity: 0;
+  height: 0%;
+}
+
+#loader-image {
+  opacity: 0;
+  z-index: 10010;
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotoaparat2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-title {
+  text-shadow: #2c0b0e -8px 7px 20px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav .centering-div {
+    height: 100vh;
+  }
+}
+.full-height {
+  height: 100vh;
+}
+
+/* ///// EFFECTS ///// */
+/* opacity fade in effect animation */
+.fadeIn {
+  /* setting default element opacity */
+  opacity: 0;
+}
+
+.animateFadeIn {
+  animation: opac 2s;
+  animation-fill-mode: forwards;
+  /*The element will retain the style values that is set by the last keyframe (opacity:1) */
+}
+
+.longFadeIn {
+  animation: opac 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* slide in effect animation */
+.slideMeRight, .slideMeLeft, .slideMeBottom {
+  position: relative;
+}
+
+.animateSlideRight {
+  animation: slide-right 2s;
+}
+
+.animateSlideLeft {
+  animation: slide-left 2s;
+}
+
+.animateSlideBottom {
+  animation: slide-bottom 1s;
+}
+
+@keyframes slide-right {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slide-bottom {
+  from {
+    bottom: -200px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
