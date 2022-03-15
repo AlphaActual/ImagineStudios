@@ -1,0 +1,107 @@
+// CUSTOM FONTS
+.font-Righteous {
+    font-family: 'Righteous', cursive;
+}
+// COLORS
+
+.bg-dark-red {
+    background-color: $red-900;
+} 
+.bg-gray-900 {
+  background-color: $gray-900;
+}
+.bg-cream {
+  background-color: #fff4ec;
+} 
+
+
+// Extends opened navbar to full height
+@include media-breakpoint-down(lg) {
+    .navbar-nav .centering-div {
+        height: 100vh;
+    }
+  }
+
+.full-height {
+    height: 100vh;
+}
+
+/* ///// EFFECTS ///// */
+
+/* opacity fade in effect animation */
+.fadeIn {
+    /* setting default element opacity */
+    opacity: 0;
+  }
+  
+  .animateFadeIn {
+    animation: opac 2s;
+    animation-fill-mode: forwards; /*The element will retain the style values that is set by the last keyframe (opacity:1) */
+  }
+  .longFadeIn{
+    animation: opac 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards; 
+  }
+  
+  @keyframes opac {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* slide in effect animation */
+  .slideMeRight, .slideMeLeft, .slideMeBottom {
+    position: relative;
+  }
+  .animateSlideRight {
+    animation: slide-right 2s;
+  }
+  .animateSlideLeft {
+    animation: slide-left 2s;
+  }
+  .animateSlideBottom {
+    animation: slide-bottom 1s;
+  }
+  
+  @keyframes slide-right {
+    from {
+      right: -200px;
+      opacity: 0;
+    }
+    to {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-left {
+    from {
+      left: -200px;
+      opacity: 0;
+    }
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-bottom {
+    from {
+      bottom: -3rem;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+
+  .rotate10{
+    transition: .2s all;
+    display: inline-block;
+    &:hover{
+      transform: rotate(10deg);
+    }
+  }
+ 

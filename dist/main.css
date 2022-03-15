@@ -11118,58 +11118,41 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.font-Righteous {
-  font-family: "Righteous", cursive;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.text-oceanic-blue {
-  color: #0a58ca;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c0b0e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.font-Righteous {
+  font-family: "Righteous", cursive;
 }
 
 .bg-dark-red {
   background-color: #2c0b0e;
 }
 
-#loading-container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: opacity 3s, height 0s linear 3s;
-  background-color: #2c0b0e;
-  z-index: 10000;
-  overflow: hidden;
+.bg-gray-900 {
+  background-color: #212529;
 }
 
-#loading-container .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#loading-container.hideLoadingScreen {
-  opacity: 0;
-  height: 0%;
-}
-
-#loader-image {
-  opacity: 0;
-  z-index: 10010;
-}
-
-header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotoaparat2.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.main-title {
-  text-shadow: #2c0b0e -8px 7px 20px;
+.bg-cream {
+  background-color: #fff4ec;
 }
 
 @media (max-width: 991.98px) {
@@ -11247,13 +11230,70 @@ header {
 }
 @keyframes slide-bottom {
   from {
-    bottom: -200px;
+    bottom: -3rem;
     opacity: 0;
   }
   to {
     bottom: 0px;
     opacity: 1;
   }
+}
+.rotate10 {
+  transition: 0.2s all;
+  display: inline-block;
+}
+.rotate10:hover {
+  transform: rotate(10deg);
+}
+
+#loading-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 3s, height 0s linear 3s;
+  background-color: #2c0b0e;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+#loading-container .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading-container.hideLoadingScreen {
+  opacity: 0;
+  height: 0%;
+}
+
+#loader-image {
+  opacity: 0;
+  z-index: 10010;
+}
+
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotoaparat2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-title {
+  text-shadow: #2c0b0e -8px 7px 20px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f8d7da;
 }
 
 /*# sourceMappingURL=main.css.map */
