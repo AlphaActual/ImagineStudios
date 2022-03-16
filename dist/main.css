@@ -7263,7 +7263,7 @@ textarea.form-control-lg {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .call-to-action-btn {
   padding: 1rem !important;
 }
 
@@ -7447,7 +7447,7 @@ textarea.form-control-lg {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
-.fs-4 {
+.fs-4, .call-to-action-btn {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
@@ -7670,7 +7670,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-danger {
+.bg-danger, .call-to-action-btn {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11073,7 +11073,7 @@ textarea.form-control-lg {
     font-size: 1.75rem !important;
   }
 
-  .fs-4 {
+  .fs-4, .call-to-action-btn {
     font-size: 1.5rem !important;
   }
 }
@@ -11139,12 +11139,24 @@ textarea.form-control-lg {
   background: #555;
 }
 
-.font-Righteous {
+.font-Righteous, .call-to-action-btn {
   font-family: "Righteous", cursive;
 }
 
 .bg-dark-red {
   background-color: #2c0b0e;
+}
+
+.bg-red-800 {
+  background-color: #58151c;
+}
+
+.bg-red-700 {
+  background-color: #842029;
+}
+
+.bg-red-600 {
+  background-color: #b02a37;
 }
 
 .bg-gray-900 {
@@ -11153,6 +11165,30 @@ textarea.form-control-lg {
 
 .bg-cream {
   background-color: #fff4ec;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.bg-black-light {
+  background-color: #121212;
+}
+
+.dark-red-gradient {
+  background-image: linear-gradient(to bottom, #58151c, #2c0b0e);
+}
+
+.light-red-gradient {
+  background-image: linear-gradient(to right bottom, #b02a37, #842029);
+}
+
+.light-black-gradient {
+  background-image: linear-gradient(to right bottom, #272727, #121212);
+}
+
+.text-shadow-1 {
+  text-shadow: #2c0b0e -8px 7px 20px;
 }
 
 @media (max-width: 991.98px) {
@@ -11164,7 +11200,37 @@ textarea.form-control-lg {
   height: 100vh;
 }
 
-/* ///// EFFECTS ///// */
+#loading-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 3s, height 0s linear 3s;
+  background-color: #2c0b0e;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+#loading-container .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loading-container.hideLoadingScreen {
+  opacity: 0;
+  height: 0%;
+}
+
+#loader-image {
+  opacity: 0;
+  z-index: 10010;
+}
+
 /* opacity fade in effect animation */
 .fadeIn {
   /* setting default element opacity */
@@ -11238,54 +11304,33 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
-.rotate10 {
+.rotate10, .call-to-action-btn:hover {
   transition: 0.2s all;
   display: inline-block;
 }
-.rotate10:hover {
-  transform: rotate(10deg);
+.rotate10:hover, .call-to-action-btn:hover {
+  transform: rotate(7deg);
 }
 
-#loading-container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: opacity 3s, height 0s linear 3s;
-  background-color: #2c0b0e;
-  z-index: 10000;
-  overflow: hidden;
+.scale2 {
+  transition: 0.2s all;
+}
+.scale2:hover {
+  transform: scale(1.2);
 }
 
-#loading-container .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.scale1 {
+  transition: 0.3s all;
 }
-
-#loading-container.hideLoadingScreen {
-  opacity: 0;
-  height: 0%;
-}
-
-#loader-image {
-  opacity: 0;
-  z-index: 10010;
+.scale1:hover {
+  transform: scale(1.02);
 }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotoaparat2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/camera1.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
-}
-
-.main-title {
-  text-shadow: #2c0b0e -8px 7px 20px;
 }
 
 .arrow-down {
@@ -11294,6 +11339,16 @@ header {
   left: 50%;
   transform: translateX(-50%);
   color: #f8d7da;
+}
+
+.call-to-action-btn {
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+.call-to-action-btn:hover, .call-to-action-btn:link, .call-to-action-btn:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
