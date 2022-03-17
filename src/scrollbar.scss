@@ -1,3 +1,4 @@
+@import "custom-utility.scss";
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -5,7 +6,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: $red-900;
+    background: $light-black;
   }
   
   /* Handle */

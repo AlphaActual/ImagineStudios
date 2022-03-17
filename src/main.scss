@@ -4,19 +4,48 @@
 @import "custom-utility.scss";
 @import "loading-screen.scss";
 @import "effects.scss";
+@import "gallery.scss";
 
 
 
 
 
 header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/camera1.jpg");
-    //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/fotoaparat2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/camera1-bw.jpg");
+    //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/fotoaparat4.jpg");
 
     background-position:center;
     background-size: cover;
     height: 100vh;
 }
+
+.filler-section {
+  
+  min-height: 70vh;
+  background-image: url("./img/objektiv-bwr.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  &.filler-section-1 {
+    background-image: url("./img/objektiv-bwr.jpg");
+  }
+  &.filler-section-2 {
+    background-image: url("./img/music-studio-team3.jpg");
+  }
+  &.filler-section-3 {
+    background-image: url("./img/ideas.jpg");
+    min-height: 100vh;
+    background-position: top;
+  }
+}
+
+.face-photo {
+  border-radius: 50%;
+}
+
+
 
 .arrow-down {
   position: absolute;

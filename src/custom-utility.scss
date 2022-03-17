@@ -2,9 +2,19 @@
 .font-Righteous {
     font-family: 'Righteous', cursive;
 }
+.font-Raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.font-Lato {
+  font-family: 'Lato', sans-serif;
+}
 // COLORS
 $light-black: #121212;
 $light-black-bright: #272727;
+$black-bottom-right: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
+$black-bottom-left: linear-gradient(to bottom left, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
+$black-bottom: linear-gradient(to bottom, rgba(255, 255, 255, 0.294) 0%, rgba(0, 0, 0, 0.226));
+
 
 .bg-dark-red {
     background-color: $red-900;
@@ -40,6 +50,15 @@ $light-black-bright: #272727;
 }
 .light-black-gradient{
   background-image: linear-gradient(to right bottom,$light-black-bright,$light-black);
+}
+.black-bottom-right{
+  background-image: $black-bottom-right;
+}
+.black-bottom-left{
+  background-image: $black-bottom-left;
+}
+.black-bottom{
+  background-image: $black-bottom;
 }
 
 // SHADOWS
