@@ -14,6 +14,7 @@ $light-black-bright: #272727;
 $black-bottom-right: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
 $black-bottom-left: linear-gradient(to bottom left, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
 $black-bottom: linear-gradient(to bottom, rgba(255, 255, 255, 0.294) 0%, rgba(0, 0, 0, 0.226));
+$transparent-black: rgba(0,0,0,0.2);
 
 
 .bg-dark-red {
@@ -39,6 +40,9 @@ $black-bottom: linear-gradient(to bottom, rgba(255, 255, 255, 0.294) 0%, rgba(0,
 } 
 .bg-black-light {
   background-color: $light-black;
+} 
+.bg-transparent-black {
+  background-color: $transparent-black;
 } 
 // GRADIENTS
 

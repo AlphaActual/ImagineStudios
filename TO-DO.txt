@@ -1,3 +1,2 @@
-Optimizacija slika 
 
-Napravi gradijent na pozadinu i loading screen i navbar mozda
+

@@ -5,6 +5,7 @@
 @import "loading-screen.scss";
 @import "effects.scss";
 @import "gallery.scss";
+@import "../node_modules/image-compare-viewer/src/styles/index.scss";
 
 
 
@@ -12,11 +13,22 @@
 
 header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/camera1-bw.jpg");
-    //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/fotoaparat4.jpg");
-
     background-position:center;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
+}
+#header-info {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/laptop-table.jpg");
+  background-position:top;
+  background-attachment: fixed;
+
+}
+#header-photoshop {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/nikon.jpg");
+  background-position:center;
+  background-attachment: fixed;
+
 }
 
 .filler-section {
@@ -32,12 +44,11 @@ header {
     background-image: url("./img/objektiv-bwr.jpg");
   }
   &.filler-section-2 {
-    background-image: url("./img/music-studio-team3.jpg");
+    background-image: url("./img/ilustration1.jpg");
   }
   &.filler-section-3 {
-    background-image: url("./img/ideas.jpg");
-    min-height: 100vh;
-    background-position: top;
+    background-image: url("./img/wall-logo2-no-drip.jpg");
+    background-position: center;
   }
 }
 
@@ -53,6 +64,15 @@ header {
   left: 50%;
   transform: translateX(-50%);
   color:$red-100;
+}
+
+article a{
+  text-decoration: none;
+}
+
+// comparison slider labels
+.icv__label {
+  @extend .bg-danger;
 }
 
 .call-to-action-btn {
@@ -74,6 +94,82 @@ header {
 }
 
 
+.border-paragraph{
+  border-left: 3px solid $secondary;
+  padding: 1rem 2rem;
+  background-color: $light;
+
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* scroll to top button */
+.top-link {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.3) ;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+.modal-image:hover{
+  cursor: zoom-in;
+}
+.btn-close{
+  position: absolute;
+  top:1rem;
+  right: 1rem;
+  z-index: 2000;
+}
+
+.top-left-box, .bottom-right-box {
+  position: absolute;
+  transition: all .2s;
+
+  
+}
+.top-left-box {
+  top: 0;
+  left: 0;
+  border-left: 10px solid $red;
+  border-top: 10px solid $red;
+  
+  width: 6rem;
+  height: 4rem;
+  z-index: 1000;
+  transform: translate(-20px,-20px);
+}
+.bottom-right-box {
+  bottom: 0;
+  right: 0;
+  border-right: 10px solid $red;
+  border-bottom: 10px solid $red;
+  width: 6rem;
+  height: 4rem;
+  z-index: 1000;
+  transform: translate(20px,20px);
+}
+.image-wrapper{
+  &:hover .top-left-box {
+    transform: translate(-10px,-10px);
+    border-radius:10px;
+  }
+  &:hover .bottom-right-box {
+    transform: translate(10px,10px);
+    border-radius: 10px;
+  }
+}
 
 // sass --watch ./scss/main.scss ./css/main.css
 // sass  ./scss/main.scss ./css/main.css

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt</title>
+    <title>ImagineStudios</title>
     <link rel="stylesheet" href="main.css">
     <script defer src="./bootstrap.bundle.min.js"></script>
     <script defer src="myScript.js"></script>
@@ -30,7 +30,7 @@
     <nav class="navbar navbar-dark bg-black-light fixed-top navbar-expand-lg shadow-md py-2 py-lg-0" id="main-navbar">
         <div class="container-fluid">
             <!-- company name -->
-            <a href="#" class="navbar-brand my-nav-link ms-3 fs-3 font-Righteous"><span class="text-danger">Imagine</span>Studios</a>
+            <a href="#header" class="navbar-brand my-nav-link ms-3 fs-3 font-Righteous"><span class="text-danger">Imagine</span>Studios</a>
 
             <!-- toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"style="padding: 0;border: 0;">
@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse justify-content-center font-Righteous" id="navbarLinks">
                 <div class="navbar-nav text-center" id="navbar-content">
                     <div class="centering-div d-lg-flex mt-5 mt-lg-0 fs-4">
-                        <a href="#banner" class="nav nav-link my-nav-link d-block m-3 mt-5 mt-lg-3 rotate10 ">Početna</a>
+                        <a href="#header" class="nav nav-link my-nav-link d-block m-3 mt-5 mt-lg-3 rotate10 ">Početna</a>
                         <a href="#about" class="nav nav-link my-nav-link m-3 d-block text-nowrap rotate10">Tim</a>
                         <a href="#services" class="nav nav-link my-nav-link m-3 d-block text-nowrap text-danger rotate10">Usluge</a>
-                        <a href="#gallery" class="nav nav-link my-nav-link m-3 d-block text-nowrap rotate10">Info</a>
+                        <a href="info.html" class="nav nav-link m-3 d-block text-nowrap rotate10">Info</a>
                         <a href="#contact" class="nav nav-link my-nav-link m-3 d-block text-nowrap rotate10">Kontakt</a>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
     </nav>
     <!-- end of navbar -->
     <!-- Header -->
-    <header class="container-fluid bg-warning pt-5 position-relative">
+    <header class="container-fluid pt-5 bg-black position-relative" id="header">
         <div class="row full-height  ">
             <div class="col align-self-center py-5 text-shadow-1">
                     <h1 class="text-white text-center font-Righteous display-1">Sve što možete <span class="text-danger rotate10 d-inline-block">ZAMISLITI</span>  za vaš projekt!</h1>     
@@ -65,7 +65,7 @@
             
         </div>
         <div class="arrow-down">
-            <a href="#main" class="link-light"><i class=" fa-solid fa-angles-down fa-bounce fs-1"></i></a>
+            <a href="#main" class="link-light my-nav-link"><i class=" fa-solid fa-angles-down fa-bounce fs-1"></i></a>
         </div>
         
     </header>
@@ -113,7 +113,7 @@
 
                   </div>
                   <div class="mx-auto text-center ">
-                    <a class="call-to-action-btn" href="#contact">Javite nam se!</a>
+                    <a class="call-to-action-btn my-nav-link" href="#contact">Javite nam se!</a>
                   </div>
                   
                 </div>
@@ -140,7 +140,7 @@
               <div class="row p-lg-5">
                 <div class="gallery-card scale1 col-sm-10 col-lg-6 mx-auto my-4 position-relative shadow ">
                   <img src="./img/nikon.jpg" alt="Slika fotoaparata" class="img-fluid scale1">
-                  <a href="#">
+                  <a href="./Photoshop.html">
                     <div class="gallery-overlay black-bottom-right">
                       <h1 class="gallery-name text-danger">Photoshop 2021</h1>
                     </div>
@@ -242,7 +242,7 @@
 
             <div class="row p-lg-5 font-Lato">
             
-              <div class="col-12 col-lg-6 p-4 d-flex justify-content-center align-items-center">
+              <div class="col-12 col-lg-6 order-2 order-lg-1 p-4 d-flex justify-content-center align-items-center">
                 <figure>
                   <blockquote class="blockquote fst-italic">
                     <p><span><i class="fa-solid fa-quote-left fa-xl"></i></span> Na svaki proizvod gledamo kao na zasebno umjetničko djelo koje 
@@ -252,12 +252,12 @@
                     <p>Uvijek nam je cilj <span class="text-danger fs-3 font-Righteous">podići ljestvicu</span>  te nastaviti napredovati na svakom koraku!<span><i class="fa-solid fa-quote-right fa-xl"></i></span></p>
                   </blockquote>
                   <figcaption class="blockquote-footer text-end">
-                    Miroslav Horvat <cite title="Source Title">, audio i video stručnjak</cite>
+                    Miroslav Horvat <cite title="Source Title">, audio i video tehničar</cite>
                   </figcaption>
                 </figure>
               </div>
 
-              <div class="col-12 col-lg-6 p-4">
+              <div class="col-12 col-lg-6 p-4 order-1 order-lg-2">
                 <img src="./img/Miroslav.jpg" alt="Lorena" class="img-fluid shadow face-photo scale1">
               </div>
             </div>
@@ -265,7 +265,7 @@
             <div class="row p-lg-5 font-Lato">
 
               <div class="col-12 col-lg-6 p-4">
-                <img src="./img/Lorena.jpg" alt="Tin Pritišanac" class="img-fluid shadow face-photo scale1">
+                <img src="./img/woman1.jpg" alt="Tin Pritišanac" class="img-fluid shadow face-photo scale1">
               </div>
 
               <div class="col-12 col-lg-6 p-4 d-flex justify-content-center align-items-center">
@@ -284,7 +284,7 @@
               </div>
             </div>
             <div class="mx-auto text-center mt-4">
-              <a class="call-to-action-btn" href="#contact">Javite nam se!</a>
+              <a class="call-to-action-btn my-nav-link" href="#contact">Javite nam se!</a>
             </div>
             <!-- End of about content -->
 
@@ -295,7 +295,7 @@
     <!-- End of about section -->
 
     <!-- Filler3 -->
-    <div class="filler-section filler-section-3"></div>
+    <div class="filler-section filler-section-3 d-none d-lg-block"></div>
     <!-- End of Filler3 -->
 
     </main>
@@ -333,7 +333,7 @@
         <!-- end of contact info column -->
 
         <!-- contact form column -->
-        <div class="col my-5 my-md-0 my-xxl-5">
+        <div class="col my-5 my-md-0 my-xxl-5 p-5 p-lg-3">
           <h2 class="text-white text-center font-Caveat mb-4  " >Javite nam se!</h2>
           <form method="post" action="process.php">
             <div class="row">
@@ -407,6 +407,10 @@
 
   </footer>
   <!-- end of footer -->
+  <!-- scroll to top button -->
+  <a class="top-link p-2 shadow" href="#">
+    <i class="fas fa-chevron-up text-danger top-icon fa-2x"></i>
+  </a>
 
 </body>
 </html>
