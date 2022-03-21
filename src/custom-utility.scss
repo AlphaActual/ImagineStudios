@@ -14,7 +14,7 @@ $light-black-bright: #272727;
 $black-bottom-right: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
 $black-bottom-left: linear-gradient(to bottom left, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1)50%, rgba(255, 255, 255, 0.2)100%);
 $black-bottom: linear-gradient(to bottom, rgba(255, 255, 255, 0.294) 0%, rgba(0, 0, 0, 0.226));
-$transparent-black: rgba(0,0,0,0.2);
+$transparent-black: rgba(0,0,0,0.6);
 
 
 .bg-dark-red {
@@ -67,7 +67,7 @@ $transparent-black: rgba(0,0,0,0.2);
 
 // SHADOWS
 .text-shadow-1 {
-  text-shadow: rgb(44 11 14) -8px 7px 20px;
+  text-shadow: rgb(0, 0, 0) -8px 7px 20px;
 }
 
 // Extends opened navbar to full height
@@ -79,6 +79,9 @@ $transparent-black: rgba(0,0,0,0.2);
 
 .full-height {
     height: 100vh;
+}
+.mb-7 {
+  margin-bottom: 7rem;
 }
 
 

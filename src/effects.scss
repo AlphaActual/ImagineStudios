@@ -7,7 +7,7 @@
   }
   
   .animateFadeIn {
-    animation: opac 2s;
+    animation: opac .5s;
     animation-fill-mode: forwards; /*The element will retain the style values that is set by the last keyframe (opacity:1) */
   }
   .longFadeIn{

@@ -11,16 +11,16 @@ document.body.addEventListener("click", function (event) {
 
             // create modal html template
             const modalHTML = `
-            <div class="modal bg-transparent-black modal-fullscreen" id="myImageModal" tabindex="-1">
-                <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content position-relative">
+            <div class="modal modal-fullscreen" id="myImageModal" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen ">
+                    <div class="modal-content bg-transparent-black position-relative">
                         
-                        <button type="button" class="btn-close scale1" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close bg-danger scale1" data-bs-dismiss="modal" aria-label="Close"></button>
                         
                     
-                        <div class="modal-body bg-light d-flex align-items-md-center justify-content-center text-center">
+                        <div class="modal-body d-flex align-items-center justify-content-center text-center">
                             
-                            <div class="col-11">
+                            <div class="col-11 fadeIn animateFadeIn">
                                 ${imgElement.outerHTML}
                             </div>
 
