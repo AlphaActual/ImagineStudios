@@ -11194,6 +11194,10 @@ textarea.form-control-lg {
   text-shadow: black -8px 7px 20px;
 }
 
+.text-shadow-2 {
+  text-shadow: black -4px 5px 5px;
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav .centering-div {
     height: 100vh;
@@ -11304,6 +11308,10 @@ textarea.form-control-lg {
   text-shadow: black -8px 7px 20px;
 }
 
+.text-shadow-2 {
+  text-shadow: black -4px 5px 5px;
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav .centering-div {
     height: 100vh;
@@ -11326,7 +11334,6 @@ textarea.form-control-lg {
   height: 100%;
   width: 100%;
   transition: opacity 3s, height 0s linear 3s;
-  background-color: #2c0b0e;
   z-index: 10000;
   overflow: hidden;
 }
@@ -11517,6 +11524,10 @@ textarea.form-control-lg {
 
 .text-shadow-1 {
   text-shadow: black -8px 7px 20px;
+}
+
+.text-shadow-2 {
+  text-shadow: black -4px 5px 5px;
 }
 
 @media (max-width: 991.98px) {
@@ -11782,6 +11793,12 @@ header {
 
 #header-davinci {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotostudio.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#header-illustrator {
+  background-image: url("../dist/img/pen-hq.jpg");
   background-position: center;
   background-attachment: fixed;
 }
