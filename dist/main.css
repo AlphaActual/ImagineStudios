@@ -11772,7 +11772,7 @@ textarea.form-control-lg {
 }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/camera1-bw.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/camera1-bw.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -11780,25 +11780,25 @@ header {
 }
 
 #header-info {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/laptop-table.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/laptop-table.jpg");
   background-position: top;
   background-attachment: fixed;
 }
 
 #header-photoshop {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/nikon.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/nikon.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 
 #header-davinci {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/fotostudio.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/fotostudio.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 
 #header-illustrator {
-  background-image: url("../dist/img/pen-hq.jpg");
+  background-image: url("./img/pen-hq.jpg");
   background-position: center;
   background-attachment: fixed;
 }
