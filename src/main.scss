@@ -43,6 +43,20 @@ header {
   
 }
 
+#header-plakat {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/drawing3.jpg");
+  background-position:center;
+  background-attachment: fixed;
+  
+}
+
+#header-audacity {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/gramafon.jpg");
+  background-position:center;
+  background-attachment: fixed;
+  
+}
+
 .filler-section {
   
   min-height: 70vh;
@@ -182,6 +196,7 @@ article a{
     border-radius: 10px;
   }
 }
+
 
 // sass --watch ./scss/main.scss ./css/main.css
 // sass  ./scss/main.scss ./css/main.css
