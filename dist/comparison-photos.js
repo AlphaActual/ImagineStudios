@@ -7,7 +7,7 @@
 
 const options = {
     hoverStart: true,
-    showLabels: true,
+    showLabels: false,
     labelOptions: {
           before: 'Nakon obrade',
           after: 'Prije obrade',

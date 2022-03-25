@@ -8,6 +8,8 @@
 .font-Lato {
   font-family: 'Lato', sans-serif;
 }
+
+
 // COLORS
 $light-black: #121212;
 $light-black-bright: #272727;
@@ -68,17 +70,29 @@ $transparent-black: rgba(0,0,0,0.6);
 // SHADOWS
 .text-shadow-1 {
   text-shadow: rgb(0, 0, 0) -8px 7px 20px;
+
 }
 .text-shadow-2 {
   text-shadow: rgb(0, 0, 0) -4px 5px 5px;
 }
 
-// Extends opened navbar to full height
+
 @include media-breakpoint-down(lg) {
+  // Extends opened navbar to full height
     .navbar-nav .centering-div {
         height: 100vh;
     }
+    .text-shadow-1, .text-shadow-2{
+      text-shadow: none;
+    }
+    
   }
+@include media-breakpoint-up(lg) { 
+  article {
+    font-size: 1.2rem;
+  }
+
+} 
 
 .full-height {
     height: 100vh;

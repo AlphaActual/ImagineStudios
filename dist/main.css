@@ -11202,6 +11202,15 @@ textarea.form-control-lg {
   .navbar-nav .centering-div {
     height: 100vh;
   }
+
+  .text-shadow-1, .text-shadow-2 {
+    text-shadow: none;
+  }
+}
+@media (min-width: 992px) {
+  article {
+    font-size: 1.2rem;
+  }
 }
 .full-height {
   height: 100vh;
@@ -11315,6 +11324,15 @@ textarea.form-control-lg {
 @media (max-width: 991.98px) {
   .navbar-nav .centering-div {
     height: 100vh;
+  }
+
+  .text-shadow-1, .text-shadow-2 {
+    text-shadow: none;
+  }
+}
+@media (min-width: 992px) {
+  article {
+    font-size: 1.2rem;
   }
 }
 .full-height {
@@ -11533,6 +11551,15 @@ textarea.form-control-lg {
 @media (max-width: 991.98px) {
   .navbar-nav .centering-div {
     height: 100vh;
+  }
+
+  .text-shadow-1, .text-shadow-2 {
+    text-shadow: none;
+  }
+}
+@media (min-width: 992px) {
+  article {
+    font-size: 1.2rem;
   }
 }
 .full-height {
@@ -11804,13 +11831,13 @@ header {
 }
 
 #header-plakat {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/drawing3.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/drawing3.jpg");
   background-position: center;
   background-attachment: fixed;
 }
 
 #header-audacity {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("../dist/img/gramafon.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%), url("./img/gramafon.jpg");
   background-position: center;
   background-attachment: fixed;
 }
@@ -11934,6 +11961,12 @@ article a {
 .image-wrapper:hover .bottom-right-box {
   transform: translate(10px, 10px);
   border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .top-left-box, .bottom-right-box {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

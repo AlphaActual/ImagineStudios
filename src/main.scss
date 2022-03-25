@@ -44,14 +44,14 @@ header {
 }
 
 #header-plakat {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/drawing3.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("./img/drawing3.jpg");
   background-position:center;
   background-attachment: fixed;
   
 }
 
 #header-audacity {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("../dist/img/gramafon.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(44, 11, 14, 0.4) 100%),url("./img/gramafon.jpg");
   background-position:center;
   background-attachment: fixed;
   
@@ -196,6 +196,14 @@ article a{
     border-radius: 10px;
   }
 }
+
+@include media-breakpoint-down(lg) {
+  // Extends opened navbar to full height
+  .top-left-box, .bottom-right-box {
+    display: none;
+  }
+    
+  }
 
 
 // sass --watch ./scss/main.scss ./css/main.css
